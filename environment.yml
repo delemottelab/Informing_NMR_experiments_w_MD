@@ -16,8 +16,8 @@ dependencies:
   - seaborn
   - tqdm
   - ipykernel
-  - mdtraj
   - pip:
     - datreant
     - gmxapi==0.2.0a1
     - ipympl
+    - mdtraj

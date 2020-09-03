@@ -12,6 +12,3 @@ update_conda:
 	conda env update --file environment.yml
 	ipython kernel install --user --name=$(PROJECT_NAME)
 
-remove_conda:
-	conda remove --name $(PROJECT_NAME) --all
-

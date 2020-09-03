@@ -1,7 +1,13 @@
 def get_sparta_plus_chemical_shifts(univ,temp_dir='./',split_size=100,skip=1):
     import MDAnalysis as mda
     import mdtraj as md
+    import numpy as np
+    import pandas as pd
+    import os
     from tqdm import tqdm
+    import warnings
+    warnings.filterwarnings("ignore")
+
     '''
     Use sparta_plus with the interface of mdtraj to get the chemical shifts of     the trajectory. The segids are concatenated as independent trajectories.
 
@@ -36,7 +42,6 @@ def get_sparta_plus_chemical_shifts(univ,temp_dir='./',split_size=100,skip=1):
         #Load data and calculate NMR-CS
         trj= md.load(xtc,top=pdb)
         n_frames=trj.n_frames
-        print(trj.n_atoms)
         for j in tqdm(range(0,n_frames,split_size),
                       desc=f't({segid})',
                       leave=True,smoothing=1):
