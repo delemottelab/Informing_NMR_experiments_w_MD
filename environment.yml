@@ -1,0 +1,23 @@
+name: nmr_assign_state 
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - ipywidgets=7.5.1
+  - jupyterlab=2.1.5
+  - mdanalysis
+  - nglview=2.7.7
+  - nodejs
+  - numpy
+  - pandas
+  - pip
+  - python=3.8.5
+  - scipy
+  - seaborn
+  - tqdm
+  - ipykernel
+  - mdtraj
+  - pip:
+    - datreant
+    - gmxapi==0.2.0a1
+    - ipympl
