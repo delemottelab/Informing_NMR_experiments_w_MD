@@ -16,6 +16,7 @@ dependencies:
   - seaborn
   - tqdm
   - ipykernel
+  - gspread
   - pip:
     - datreant
     - gmxapi==0.2.0a1

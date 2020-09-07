@@ -28,3 +28,7 @@ pip-delete-this-directory.txt
 
 # Mypy cache
 .mypy_cache/
+
+# MD files
+*xtc
+*trr
