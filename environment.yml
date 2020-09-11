@@ -1,4 +1,5 @@
-name: nmr_assign_state_gpu 
+name: nmr_assign_state
+# This has gpu support
 channels:
   - conda-forge
   - defaults
