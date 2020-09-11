@@ -1,10 +1,9 @@
-name: nmr_assign_state 
+name: nmr_assign_state_gpu 
 channels:
   - conda-forge
   - defaults
 dependencies:
   - ipywidgets=7.5.1
-  - jupyterlab=2.1.5
   - mdanalysis
   - nglview=2.7.7
   - nodejs
@@ -17,8 +16,10 @@ dependencies:
   - tqdm
   - ipykernel
   - gspread
+  - pymc3
   - pip:
-    - datreant
     - gmxapi==0.2.0a1
     - ipympl
     - mdtraj
+    - scikit-cuda
+    - pycuda

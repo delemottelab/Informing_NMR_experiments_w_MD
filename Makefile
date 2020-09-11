@@ -13,7 +13,7 @@ update_conda:
 	ipython kernel install --user --name=$(PROJECT_NAME)
 
 remove_conda:
-	conda remove --name=$(PROJECT_NAME)
+	conda remove --name=$(PROJECT_NAME) --all
 
 update_data:
 	 while read a b;do rsync -rauLih --progress --delete --include-from=data/raw/include_list.txt   data/raw/$$a data/raw/$$b;done < data/raw/dir_list.txt

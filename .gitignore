@@ -32,3 +32,4 @@ pip-delete-this-directory.txt
 # MD files
 *xtc
 *trr
+.*npz
