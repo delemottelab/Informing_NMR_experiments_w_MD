@@ -22,5 +22,7 @@ dependencies:
     - gmxapi==0.2.0a1
     - ipympl
     - mdtraj
-    - scikit-cuda
-    - pycuda
+    # - scikit-cuda
+    # - pycuda
+    #  2032  export PATH=$PATH:/usr/local/cuda-10.0/bin
+ # 2039  export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/cuda-10.0/lib64
