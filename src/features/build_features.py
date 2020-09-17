@@ -1,4 +1,4 @@
-def get_sparta_plus_chemical_shifts(univ,temp_dir='./',split_size=100,skip=1):
+def get_chemical_shifts(univ,temp_dir='./',split_size=100,skip=1,method='sparta_plus'):
     import MDAnalysis as mda
     import mdtraj as md
     import numpy as np
@@ -30,6 +30,15 @@ def get_sparta_plus_chemical_shifts(univ,temp_dir='./',split_size=100,skip=1):
     xtc = f"{temp_dir}/tmp.xtc"
     pdb = f"{temp_dir}/tmp.pdb"
     
+    
+    #Which method:
+    if method == 'sparta_plus': 
+        method_function = md.nmr.chemical_shifts_spartaplus
+    elif method == 'ppm': 
+        method_function = md.nmr.chemical_shifts_ppm
+    else:
+        raise Exception(f'Method {method} not recognized.')
+    
     list_of_splits=[]
     for segid in np.unique(sel_protein.segids):
         sel_segid=sel_protein.select_atoms(
@@ -46,8 +55,8 @@ def get_sparta_plus_chemical_shifts(univ,temp_dir='./',split_size=100,skip=1):
                       desc=f't({segid})',
                       leave=True,smoothing=1):
             list_of_splits.append(
-            md.nmr.chemical_shifts_spartaplus(
-                trj[j:j+split_size]))
+           method_function(trj[j:j+split_size])
+            )
         df = pd.concat(list_of_splits,axis=1)
         df.columns=np.arange(0,len(df.columns))       
     os.remove(xtc)
