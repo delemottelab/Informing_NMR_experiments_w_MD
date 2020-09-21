@@ -18,9 +18,9 @@ dependencies:
   - ipykernel
   - gspread
   - pymc3
+  - ipympl
   - pip:
     - gmxapi==0.2.0a1
-    - ipympl
     - mdtraj
     # - scikit-cuda
     # - pycuda

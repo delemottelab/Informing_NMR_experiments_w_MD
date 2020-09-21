@@ -33,3 +33,8 @@ pip-delete-this-directory.txt
 *xtc
 *trr
 .*npz
+reports/figures/T101-helix_HB.png
+
+#Other 
+tmp.pdb
+#From jupyter-git
