@@ -39,3 +39,4 @@ reports/figures/T101-helix_HB.png
 tmp.pdb
 #From jupyter-git
 models/bayesian/normal_model_sparta_plus_CA.nc
+models/bayesian/skew_model_sparta_plus_CA.nc
