@@ -1,4 +1,4 @@
-def get_chemical_shifts(univ,temp_dir='./',split_size=100,skip=1,method='sparta_plus'):
+def get_chemical_shifts(univ,temp_dir='./',split_size=100,skip=1,method='sparta_plus',temperature=298.,pH=5.0):
     import MDAnalysis as mda
     import mdtraj as md
     import numpy as np
@@ -17,18 +17,22 @@ def get_chemical_shifts(univ,temp_dir='./',split_size=100,skip=1,method='sparta_
     temp_dir : Temporary directory for the tmp trajectory.
     split_size : How to split the trajectory so the /tmp does not fill.
     skip : Amount of frames skiped.
+    pH: pH for shiftx2 calculations.
+    temperature: temperature for shiftx2 calculations.
       
     Returns
     -------
     df: Dataframe of chemical shifts (n_cs_nuclei,n_frames*n_segids)
     '''
-    assert isinstance(temp_dir,str), f'{temp_dir} should be a str'
-    assert isinstance(split_size,int), f'{split_size} should be a int'
-    assert isinstance(skip,int), f'{skip} should be a int'
+    assert isinstance(temp_dir,str), {temp_dir} + ' should be a str'
+    assert isinstance(split_size,int), split_size +  ' should be a int'
+    assert isinstance(skip,int), skip + ' should be a int'
+    assert isinstance(temperature,float), str(temperature) + ' should be a float'
+    assert isinstance(pH,float), str(pH) + ' should be a float'
     
-    sel_protein=univ.select_atoms('protein')
-    xtc = f"{temp_dir}/tmp.xtc"
-    pdb = f"{temp_dir}/tmp.pdb"
+    sel_protein=univ.select_atoms('protein and not resid 26 121')
+    xtc = temp_dir+"/tmp.xtc"
+    pdb = temp_dir+"/tmp.pdb"
     
     
     #Which method:
@@ -36,13 +40,15 @@ def get_chemical_shifts(univ,temp_dir='./',split_size=100,skip=1,method='sparta_
         method_function = md.nmr.chemical_shifts_spartaplus
     elif method == 'ppm': 
         method_function = md.nmr.chemical_shifts_ppm
+    elif method == 'shiftx2': 
+        method_function = md.nmr.chemical_shifts_shiftx2
     else:
-        raise Exception(f'Method {method} not recognized.')
+        raise Exception('Method' + method + 'not recognized.')
     
     list_of_splits=[]
     for segid in np.unique(sel_protein.segids):
         sel_segid=sel_protein.select_atoms(
-            f'segid {segid}') 
+            'segid '+segid) 
         with mda.Writer(xtc, n_atoms=sel_segid.atoms.n_atoms) as W:
             for ts in univ.trajectory[::skip]:
                 W.write(sel_segid)
@@ -52,11 +58,16 @@ def get_chemical_shifts(univ,temp_dir='./',split_size=100,skip=1,method='sparta_
         trj= md.load(xtc,top=pdb)
         n_frames=trj.n_frames
         for j in tqdm(range(0,n_frames,split_size),
-                      desc=f't({segid})',
+                      desc='t('+segid+')',
                       leave=True,smoothing=1):
-            list_of_splits.append(
-           method_function(trj[j:j+split_size])
-            )
+            if method == 'shiftx2':
+                list_of_splits.append(
+               method_function(trj[j:j+split_size],pH=pH,temperature=temperature)
+                )
+            else:
+                list_of_splits.append(
+               method_function(trj[j:j+split_size])
+                )
         df = pd.concat(list_of_splits,axis=1)
         df.columns=np.arange(0,len(df.columns))       
     os.remove(xtc)
