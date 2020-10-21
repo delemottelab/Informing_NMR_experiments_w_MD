@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="96"
+   inkscape:export-xdpi="96"
+   inkscape:export-filename="/Users/sperez/Projects/nmr_assign_state/reports/for_print/assignment_skew_model_all_CA_print_pp.png"
+   width="201.64401mm"
+   height="238.76001mm"
+   viewBox="0 0 201.64401 238.76001"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0beta2 (2b71d25, 2019-12-03)"
+   sodipodi:docname="assignment_skew_model_all_CA_print_pp.svg">
+  <defs
+     id="defs2">
+    <rect
+       x="165.55807"
+       y="152.19566"
+       width="51.637814"
+       height="11.0976"
+       id="rect8521" />
+    <rect
+       x="166.23752"
+       y="98.972473"
+       width="36.503147"
+       height="12.950638"
+       id="rect8427" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1682331"
+     inkscape:cx="392.4312"
+     inkscape:cy="438.83567"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="2560"
+     inkscape:window-height="1395"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-2.002578,-27.654253)">
+    <image
+       sodipodi:absref="/Users/sperez/Projects/nmr_assign_state/reports/for_print/assignment_skew_model_all_CA_print.svg"
+       xlink:href="assignment_skew_model_all_CA_print.svg"
+       y="27.654253"
+       x="2.002578"
+       preserveAspectRatio="none"
+       inkscape:svg-dpi="150"
+       width="152.39999"
+       height="238.76001"
+       id="image2780" />
+    <image
+       sodipodi:absref="/Users/sperez/Projects/nmr_assign_state/reports/structures/FullyOpen.tga"
+       xlink:href="../structures/FullyOpen.tga"
+       y="109.47703"
+       x="158.95053"
+       width="44.016617"
+       height="38.147736"
+       preserveAspectRatio="none"
+       id="image8326" />
+    <image
+       sodipodi:absref="/Users/sperez/Projects/nmr_assign_state/reports/structures/Open.tga"
+       xlink:href="../structures/Open.tga"
+       y="62.488373"
+       x="158.27109"
+       width="45.375507"
+       height="39.325439"
+       preserveAspectRatio="none"
+       id="image8421" />
+    <text
+       xml:space="preserve"
+       id="text8425"
+       style="font-style:normal;font-weight:normal;font-size:5.29166999999999987px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8427);fill:#000000;fill-opacity:1;stroke:none;"
+       transform="translate(0.28861579,45.658634)"><tspan
+         sodipodi:role="line"
+         x="166.23828"
+         y="103.80041"><tspan>Fully-Open</tspan></tspan></text>
+    <text
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8427);fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;"
+       id="text8425-9"
+       xml:space="preserve"
+       x="-1.953125"
+       y="15.195312"
+       transform="scale(0.26458333)" />
+    <text
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8427);fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;"
+       id="text8425-4"
+       xml:space="preserve"
+       x="-1.953125"
+       y="15.195312"
+       transform="scale(0.26458333)" />
+    <text
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8427);fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;"
+       id="text8425-1"
+       xml:space="preserve"
+       x="-1.953125"
+       y="15.195312"
+       transform="scale(0.26458333)" />
+    <text
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8427);fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;"
+       id="text8425-3"
+       xml:space="preserve"
+       x="-1.9531262"
+       y="15.195322"
+       transform="scale(0.26458333)" />
+    <text
+       xml:space="preserve"
+       id="text8519"
+       style="font-style:normal;font-weight:normal;font-size:5.29166999999999987px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8521);fill:#000000;fill-opacity:1;stroke:none;"
+       transform="translate(8.4988559,-49.208268)"><tspan
+         sodipodi:role="line"
+         x="165.55859"
+         y="157.02306"><tspan>Open</tspan></tspan></text>
+  </g>
+</svg>
