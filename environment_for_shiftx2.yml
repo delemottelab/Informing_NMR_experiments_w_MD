@@ -1,0 +1,14 @@
+name: nmr_assign_state_for_shiftx2
+channels:
+  - defaults
+  - omnia
+dependencies:
+  - mdanalysis
+  - numpy
+  - pip
+  - python=3.5
+  - shiftx2
+  - ipykernel
+  - mdtraj
+  - tqdm
+  - jupyterlab
