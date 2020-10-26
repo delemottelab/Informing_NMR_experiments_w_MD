@@ -25,5 +25,6 @@ dependencies:
     - cellbell
     # - scikit-cuda
     # - pycuda
-    #  2032  export PATH=$PATH:/usr/local/cuda-10.0/bin
- # 2039  export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/cuda-10.0/lib64
+    #    export PATH=$PATH:/usr/local/cuda-10.0/bin
+ #   export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/cuda-10.0/lib64
+ # ipython kernel install --user --name=nmr_assign_state
