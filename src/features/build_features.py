@@ -96,3 +96,32 @@ def get_chemical_shifts(univ,temp_dir='./',split_size=100,skip=1,method='sparta_
     os.remove(xtc)
     os.remove(pdb)
     return df
+
+def get_significant(my_path):
+    '''
+    Open the chemical-shift model and select which residues have |effect_size| > 0.5 
+    and |diff_means| > 0.2
+    Parameters
+    ----------
+    my_path: string with path to nc file containg the arviz xarray.
+      
+    Returns
+    -------
+    list of residues.
+    '''
+    
+    import numpy as np
+    import arviz as az
+    import os
+    
+    assert os.path.isfile(my_path), f'nc file does not exist.'
+
+    my_model = az.from_netcdf(my_path)
+    sim = az.summary(my_model)
+    sim = (sim['hdi_97%'] + sim['hdi_3%'])/2.
+    diff_means = sim.filter(axis=0,regex='diff_means').to_numpy()
+    effect_size = sim.filter(axis=0,regex='effect_size').to_numpy()
+    mask = np.logical_and(np.abs(diff_means) > 0.2, np.abs(effect_size) > 0.5)
+    output = list(my_model.posterior.resid[mask].to_series())
+    
+    return output
