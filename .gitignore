@@ -50,3 +50,8 @@ normal_model_ppm_CA.nc
 normal_model_ppm_C.nc
 normal_model_ppm_CB.nc
 normal_model_ppm_N.nc
+*.nc
+*-Copy*py
+notebooks/*Copy*
+err*
+out*
