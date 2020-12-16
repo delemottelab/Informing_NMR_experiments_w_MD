@@ -12,7 +12,7 @@ $^{b)}$ Correspondance to: lucied@kth.se, aem5@columbia.edu
 
 ## Info
 
-This github repository contains the code and files for *Informing NMR experiments with molecular dynamics simulations to characterize the dominant open state of KcsA* with [doi](): . Data files including inference models and MD trajectories can be found at 
+This github repository contains the code and files for *Informing NMR experiments with molecular dynamics simulations to characterize the dominant open state of KcsA* with doi [https://doi.org/10.1101/2020.12.14.422800](https://doi.org/10.1101/2020.12.14.422800): . Data files including inference models and MD trajectories can be found at 
 [https://osf.io/6h2z5/](https://osf.io/6h2z5/)
 
 
