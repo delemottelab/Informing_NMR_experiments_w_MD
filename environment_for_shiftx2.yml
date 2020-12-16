@@ -1,9 +1,9 @@
 name: nmr_assign_state_for_shiftx2
 channels:
-  - defaults
   - omnia
+  - conda-forge
+  - defaults
 dependencies:
-  - mdanalysis
   - numpy
   - pip
   - python=3.5
@@ -12,3 +12,4 @@ dependencies:
   - mdtraj
   - tqdm
   - jupyterlab
+  - mdanalysis
