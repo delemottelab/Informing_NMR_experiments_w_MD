@@ -91,7 +91,7 @@
 \author{Dongyu Zhang}
 \thanks{These three authors contributed equally}
 \affiliation{Department of Chemistry, Columbia University, New York, New York 10027, United States}
-\affiliation{Current Address:Plexxikon Inc., Berkeley, CA 94710, United States}
+\affiliation{Current Address: Plexxikon Inc., Berkeley, CA 94710, United States}
 
 \author{Lucie Delemotte}
 \thanks{Correspondance to: lucied@kth.se, aem5@columbia.edu }
@@ -157,7 +157,7 @@
 \begin{figure*}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/2Ds_all_v2-01.eps}
 	 \caption{\scriptsize
-	 2D \ce{^13C}-\ce{^15N} NcaCX (a), NcoCX (b), and ZF-TEDOR (c) spectra of KcsA in the activated state (3:1 DOPE/DOPG, 50 mM KCl, pH 4.0) spectra collected at 900 MHz (a and b) and 750 MHz (c). Assigned resonances are labeled as either N$^i$-C$^i$ (NcaCX and ZF-TEDOR) or N$^i$-C$^{i-1}$ (NcoCX and ZF-TEDOR).
+	 2D \ce{^13C}-\ce{^15N} NcaCX (a), NcoCX (b), and ZF-TEDOR (c) spectra of KcsA in the activated state (3:1 DOPE/DOPG, 50 mM KCl, pH 4.0) spectra collected at 900 MHz (a and b) and 750 MHz (c). Assigned resonances are labeled as either C$^i$-N$^i$ (NcaCX and ZF-TEDOR) or C$^{i-1}$-N$^i$ (NcoCX and ZF-TEDOR).
 }
 \label{SI_NMR_full_2Ds}
 \end{figure*}
@@ -165,7 +165,7 @@
 \begin{figure*}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/exp_hist-05.eps}
 	 \caption{\scriptsize
-	 Histograms of the experimental difference ($\Delta\text{CS}_{\text{exp}} = \text{CS}_{\text{exp}}^{\text{pH=4,act}} - \text{CS}_{\text{exp}}^{\text{pH=7.5,deact}}$) between the activated and deactivated state assigned chemical shifts for N (a), C (b), \ca (c), and \cb (d). A fitted normal distribution is shown on each histogram (red lines) with the distribution equation and parameters shown, inset, demonstrating the proper referencing of the datasets to one another.
+	 Histograms of the experimental difference ($\Delta\text{CS}_{\text{exp}} = \text{CS}_{\text{exp}}^{\text{pH=4,act}} - \text{CS}_{\text{exp}}^{\text{pH=7.5,deact}}$) between the activated and deactivated state assigned chemical shifts for (a) N, (b) \ca, (c) C, and (d) \cb. A fitted normal distribution is shown on each histogram (red lines) with the distribution equation and parameters shown, inset, demonstrating the proper referencing of the datasets to one another.
 }
 \label{SI_Exp_Hist}
 \end{figure*}
@@ -181,9 +181,9 @@
 
 
 \begin{figure*}[tbp]
-	\includegraphics[width=\textwidth]{figures_SI/SHIFTX2_SPARTA-01.eps}
+	\includegraphics[width=\textwidth]{figures_SI/SHIFTX2_SPARTA-02.eps}
 	 \caption{\scriptsize
-	 Comparison of the predicted chemical shifts of the various states of KcsA (Fully Open - black, Partially Open - red, Closed - cyan) using SPARTA+ and SHIFTX2. The dashed line indicating perfect agreement is drawn for the eye.
+	 Comparison of the predicted chemical shifts from the MD trajectories of the various states of KcsA using SPARTA+ and SHIFTX2. $\Delta\text{CS}_{\text{SPARTA+-SHIFTX2}} = \text{CS}^{\text{X}}_{\text{sim, SPARTA+}} - \text{CS}^{\text{X}}_{\text{sim, SHIFTX2}} $, where X is FO (orange), PO (blue), or Closed (green). The dashed lines represent a normal distribution fit to the histograms.
 }
 \label{SI_SPARTA_v_SHIFTX2}
 \end{figure*}
@@ -191,14 +191,14 @@
 \begin{sidewaysfigure}
 	\includegraphics[width=\textwidth]{figures_SI/assignment_skew_model_all_print_no_ref_XRD.png}
  	 \caption{\scriptsize
-    Chemical shifts difference between experiment and the calculated CS for the XRD structures ($\text{CS}_{\text{XRD}}^{\text{X}}-\text{CS}_{\text{exp}}$), where $X$ represents the FO (orange) or PO (blue) sate. All residues on the x-axis for the different nuclei and chemical shift prediction methods. The agreement between the calculation and the NMR experiments is higher the closer the value is to zero. Chemical shifts predicted by SPARTA+ and SHIFTX2 are drawn with triangles and squares respectively. The green shade depicts the typical experimental uncertainty.}
+    Chemical shifts difference between experiment and the calculated CS for the XRD structures ($\text{CS}_{\text{XRD}}^{\text{X}}-\text{CS}_{\text{exp}}$), where X represents the FO (orange) or PO (blue) sate. All residues on the x-axis for the different nuclei and chemical shift prediction methods. The agreement between the calculation and the NMR experiments is higher the closer the value is to zero. Chemical shifts predicted by SPARTA+ and SHIFTX2 are drawn with triangles and squares respectively. The green shade depicts the typical experimental uncertainty.}
 \label{SI_assignment_XRD}
 \end{sidewaysfigure}
 
 \begin{figure*}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/hist_shiftx2_CA.png}
 	 \caption{\scriptsize
- Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the \ca nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
+ Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the \ca nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The vertical line indicates the NMR determined experimental CS for the activated state. The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
 }
 \label{SI_hist1}
 \end{figure*}
@@ -206,7 +206,7 @@
 \begin{figure*}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/hist_shiftx2_CB.png}
 	 \caption{\scriptsize
- Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the \ca nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
+ Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the \cb nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The vertical line indicates the NMR determined experimental CS for the activated state. The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
 }
 \label{SI_hist2}
 \end{figure*}
@@ -214,7 +214,7 @@
 \begin{figure*}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/hist_shiftx2_C.png}
 	 \caption{\scriptsize
- Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the C nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
+ Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the C nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The vertical line indicates the NMR determined experimental CS for the activated state. The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
 }
 \label{SI_hist3}
 \end{figure*}
@@ -222,7 +222,7 @@
 \begin{figure*}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/hist_shiftx2_N.png}
 	 \caption{\scriptsize
- Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the N nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
+ Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the N nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The vertical line indicates the NMR determined experimental CS for the activated state. The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
 }
 \label{SI_hist4}
 \end{figure*}
@@ -230,7 +230,7 @@
 \begin{figure*}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/hist_sparta_plus_CA.png}
 	 \caption{\scriptsize
- Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the \ca nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
+ Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the \ca nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The vertical line indicates the NMR determined experimental CS for the activated state. The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
 }
 \label{SI_hist5}
 \end{figure*}
@@ -238,7 +238,7 @@
 \begin{figure*}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/hist_sparta_plus_CB.png}
 	 \caption{\scriptsize
- Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the \cb nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
+ Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the \cb nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The vertical line indicates the NMR determined experimental CS for the activated state. The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
 }
 \label{SI_hist6}
 \end{figure*}
@@ -246,7 +246,7 @@
 \begin{figure*}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/hist_sparta_plus_C.png}
 	 \caption{\scriptsize
- Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the C nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
+ Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the C nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The vertical line indicates the NMR determined experimental CS for the activated state. The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
 }
 \label{SI_hist7}
 \end{figure*}
@@ -254,7 +254,7 @@
 \begin{figure*}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/hist_sparta_plus_N.png}
 	 \caption{\scriptsize
- Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the N nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
+ Probability distributions of the raw simulated CS of the MD trajectory snapshots for the different residues assigned spectroscopically for the N nucleus and the CS prediction method SHIFTX2. Three different states are compared: Partially Open (blue), Fully Open (orange) and Closed (green). The vertical line indicates the NMR determined experimental CS for the activated state. The distributions are calculated using kernel density estimation as implemented in the python library Seaborn. 
 }
 \label{SI_hist8}
 \end{figure*}
@@ -262,7 +262,7 @@
 \begin{figure*}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/correlation_shiftx2_print.png}
 	 \caption{\scriptsize
- Correlation diagram between experimental and simulated chemical shifts for the Partially Open (blue) and Fully Open (orange) states for the nuclei studied and for the chemical shift prediction method SHIFTX2. 
+ Correlation diagram between experimental and simulated chemical shifts (shown in Figures \ref{SI_hist1}-\ref{SI_hist4}) for the Partially Open (blue) and Fully Open (orange) states for the nuclei studied and for the chemical shift prediction method SHIFTX2. 
 }
 \label{SI_corr1}
 \end{figure*}
@@ -270,7 +270,7 @@
 \begin{figure*}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/correlation_sparta_plus_print.png}
 	 \caption{\scriptsize
- Correlation diagram between experimental and simulated chemical shifts for the Partially Open (blue) and Fully Open (orange) states for the nuclei studied and for the chemical shift prediction method SPARTA+. 
+ Correlation diagram between experimental and simulated chemical shifts (shown in Figures \ref{SI_hist5}-\ref{SI_hist8}) for the Partially Open (blue) and Fully Open (orange) states for the nuclei studied and for the chemical shift prediction method SPARTA+. 
 }
 \label{SI_corr2}
 \end{figure*}
@@ -279,7 +279,7 @@
 \begin{sidewaysfigure}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/assignment_skew_model_all_print.png}
 	 \caption{\scriptsize
-Centers of 94$\%$ credible intervals of the difference in relative chemical shifts between experiment and simulation ($\Delta\text{CS}_{\text{sim}}^{\text{X}}-\Delta\text{CS}_{\text{exp}}$). The limits of the credible interval are shown as error bars. Both experiment and simulation use as reference the closed state chemical shifts: $\Delta\text{CS}_{\text{sim}}^{\text{X}}$ = CS$_{\text{sim}}^{\text{X}}$ - CS$_{\text{sim}}^{\text{C}}$  and $\Delta\text{CS}_{\text{exp}}$ = CS$_{\text{exp}}^{\text{pH}=4}$ - CS$_{\text{exp}}^{\text{pH}=7.5}$, where $X$ represents the FO or PO sate. All residues on the x-axis for the different nuclei and chemical shift prediction methods. The agreement between MD simulations and the NMR experiments is higher the closer the value is to zero. Chemical shifts predicted by SPARTA+ and SHIFTX2 are drawn with triangles and squares respectively. The PO state (blue) has in general a better agreement with experiment than FO state (orange). The green shade depicts the typical experimental uncertainty. If two methods produce statistically identical CS or the signal is missing in the spectrum, the symbols are represented in gray.}
+Centers of 94$\%$ credible intervals of the difference in relative chemical shifts between experiment and simulation ($\Delta\text{CS}_{\text{sim}}^{\text{X}}-\Delta\text{CS}_{\text{exp}}$). The limits of the credible interval are shown as error bars. Both experiment and simulation use as reference the closed state chemical shifts: $\Delta\text{CS}_{\text{sim}}^{\text{X}}$ = CS$_{\text{sim}}^{\text{X}}$ - CS$_{\text{sim}}^{\text{C}}$  and $\Delta\text{CS}_{\text{exp}}$ = CS$_{\text{exp}}^{\text{pH}=4}$ - CS$_{\text{exp}}^{\text{pH}=7.5}$, where X represents the FO or PO sate. All residues on the x-axis for the different nuclei and chemical shift prediction methods. The agreement between MD simulations and the NMR experiments is higher the closer the value is to zero. Chemical shifts predicted by SPARTA+ and SHIFTX2 are drawn with triangles and squares respectively. The PO state (blue) has in general a better agreement with experiment than FO state (orange). The green shade depicts the typical experimental uncertainty. If two methods produce statistically identical CS or the signal is missing in the spectrum, the symbols are represented in gray.}
 \label{SI_assignment_all}
 \end{sidewaysfigure}
 %\end{landscape}
@@ -303,7 +303,7 @@ Centers of 94$\%$ credible intervals of the difference in relative chemical shif
 \begin{figure*}[tbp]
 	\includegraphics[width=\textwidth]{figures_SI/assignment_skew_model_markers_no_refernce_print.png}
 	 \caption{\scriptsize
-Centers 94\% credible intervals of the difference in chemical shifts between experiment and simulation in absolute value ($|\text{CS}_{\text{sim}}^{\text{X}}-\text{CS}_{\text{exp}}|$). The limits of the credible interval are shown as error bars. The residues found to be discriminating residues using our statistical criteria are represented on the x-axis for the different nuclei and chemical shift prediction methods. The agreement to experiment is higher the closer the value is to zero. The green shade depicts the typical experimental uncertainty. The absence of a reference state increases the noise in the data. 
+Centers of 94\% credible intervals for the difference in chemical shifts between experiment and simulation in absolute value ($|\text{CS}_{\text{sim}}^{\text{X}}-\text{CS}_{\text{exp}}|$). The limits of the credible interval are shown as error bars. The residues found to be discriminating residues using our statistical criteria are represented on the x-axis for the different nuclei and chemical shift prediction methods. The agreement to experiment is higher the closer the value is to zero. The green shade depicts the typical experimental uncertainty. The absence of a reference state increases the noise in the data. 
 }
 \label{SI_assignment_no_ref}
 \end{figure*}
@@ -317,10 +317,39 @@ Distributions of the CS simulation-experiment difference for the different nucle
 \end{figure*}
 
 \begin{figure}[tbp]
-\includegraphics[width=0.95\textwidth]{figures_SI/SI_Markers_FlowChart_v3-01.eps}
-\caption{\label{SI_FlowChart} \scriptsize
-    Flow chart demonstrating the combinations of the $\Delta\text{CS}_{\text{sim}}^{\text{X}}$ and $\Delta\text{CS}_{\text{exp}}$ that yield various classifications of the state markers identified in this study. A threshold of tolerance of 0.2 ppm for \ce{^13C} and 0.5 ppm for \ce{^15N} was used to determine if the CS change was significant. The resonances that are identified by Bayesian inference from the MD simulation data as distinguishing between FO and PO are shown, on the right, within the classification that they were determined to belong. Two different classifications for each state marker are possible due to the two chemical shift prediction tools. These are marked with what chemical shift prediction tool was used for each resonance and classification type (SH = SHIFTX2 and S+ = SPARTA+). The state that determined to be likely based on the calculation of $\Delta\Delta\text{CS}^{\text{X}}$ is shown as an orange (FO) and blue (PO) box. Dashed boxes are used to indicate when one CS prediction tool was inconclusive and the other determined a state. Resonances that were determined to be inconclusive are shown without a thin box around them. FO = fully open, PO = partially open, C = closed, $\Delta\text{CS}_{\text{sim}}^{\text{X}}$ = $\text{CS}_{\text{sim}}^{\text{X}}$ - $\text{CS}_{\text{sim}}^{\text{Closed}}$, and $\Delta\text{CS}_{\text{exp}}$ = $\text{CS}_{\text{exp}}^{\text{pH}=4\text{, act}}$ - $\text{CS}_{\text{exp}}^{\text{pH}=7.5\text{, deact}}$.}
+	\includegraphics[width=0.85\textwidth]{figures_SI/SPARTA_histograms-01.eps}
+	 \caption{\scriptsize
+Distributions of the CS simulation-experiment difference, $\text{CS}_{\text{sim}}^{\text{X}}-\text{CS}_{\text{exp}}$, for SPARTA+ and for the two conductive states (Partially Open, blue and Fully Open, orange). Each distribution is fit to a normal distribution function, shown inset with fitted values for PO (blue), and FO (orange).
+}
+\label{SI_sparta_histogram}
 \end{figure}
+\clearpage
+
+\begin{figure}[tbp]
+	\includegraphics[width=0.85\textwidth]{figures_SI/SHIFTX2_histograms-02.eps}
+	 \caption{\scriptsize
+Distributions of the CS simulation-experiment difference, $\text{CS}_{\text{sim}}^{\text{X}}-\text{CS}_{\text{exp}}$, for SHIFTX2 and for the two conductive states (Partially Open, blue and Fully Open, orange). Each distribution is fit to a normal distribution function, shown inset with fitted values for PO (blue), and FO (orange).
+}
+\label{SI_shiftx2_histogram}
+\end{figure}
+\clearpage
+
+\begin{figure*}[tbp]
+	\includegraphics[width=\textwidth]{figures_SI/assignment_skew_model_markers_shifted_print.png}
+	 \caption{\scriptsize
+Centers 94\% credible intervals of the difference in chemical shifts between experiment and simulation in absolute value ($|(\text{CS}_{\text{sim}}^{\text{X}}-\delta)-\text{CS}_{\text{exp}}|$) where the simulated chemical shift has been corrected by $\delta$. $\delta$ is the position of the a fitted gaussian distribution to the chemical shifts of a nuclei-type (See Figures \ref{SI_shiftx2_histogram}-\ref{SI_sparta_histogram}). The limits of the credible interval are shown as error bars. The residues found to be discriminating residues using our statistical criteria are represented on the x-axis for the different nuclei and chemical shift prediction methods. The agreement to experiment is higher the closer the value is to zero. The green shade depicts the typical experimental uncertainty. The absence of a reference state increases the noise in the data. 
+}
+\label{SI_assignment_shift}
+\end{figure*}
+
+\clearpage
+
+\begin{figure}[tbp]
+\includegraphics[width=0.95\textwidth]{figures_SI/SI_Markers_FlowChart_v4-04.eps}
+\caption{\label{SI_FlowChart} \scriptsize
+    Flow chart demonstrating the combinations of the $\Delta\text{CS}_{\text{sim}}^{\text{X}}$ and $\Delta\text{CS}_{\text{exp}}$ that yield various classifications of the state markers identified in this study. A threshold of tolerance of 0.2 ppm for \ce{^13C} and 0.5 ppm for \ce{^15N}, based on the experimental tolerance, was used to determine if the CS change was significant. The resonances that are identified by Bayesian inference from the MD simulation data as distinguishing between FO and PO are shown, on the right, within the classification that they were determined to belong. Two different classifications for each state marker are possible due to the two chemical shift prediction tools. These are marked with what chemical shift prediction tool was used for each resonance and classification type (SH = SHIFTX2 and S+ = SPARTA+). The state that determined to be likely based on the calculation of $\Delta\Delta\text{CS}^{\text{X}}$ is shown as an orange (FO) and blue (PO) box. Dashed boxes are used to indicate when one CS prediction tool was inconclusive and the other determined a state. Resonances that were determined to be inconclusive are shown without a thin box around them. FO = fully open, PO = partially open, C = closed, $\Delta\text{CS}_{\text{sim}}^{\text{X}}$ = $\text{CS}_{\text{sim}}^{\text{X}}$ - $\text{CS}_{\text{sim}}^{\text{Closed}}$, and $\Delta\text{CS}_{\text{exp}}$ = $\text{CS}_{\text{exp}}^{\text{pH}=4\text{, act}}$ - $\text{CS}_{\text{exp}}^{\text{pH}=7.5\text{, deact}}$.}
+\end{figure}
+\clearpage
 
 \begin{figure*}[tbp]
 	\includegraphics[width=0.85\textwidth]{figures_SI/dihedral_analysis_SI.png}
@@ -331,6 +360,7 @@ Ramachandran and Janin diagrams (left and right columns, respectively) of the di
 \end{figure*}
 
 \clearpage
+
 \begin{figure*}[tbp]
 	\includegraphics[width=0.85\textwidth]{figures_SI/statistical_filtering_skew_model_shiftx2_T61.png}
 	 \caption{\scriptsize
@@ -348,20 +378,20 @@ Statistical filtering variables: difference in means and effect size for residue
 \begin{longtable} {l|l|c|c|c}
 \caption{\scriptsize Experimental parameters for the 3D experiments at 900 MHz. Pulse sequences similar to those used for these experiments are available at \url{comdnmr.nysbc.org}\label{SI_tb_900exp}}\\ \hline \hline
 Experiment & & 3D NCACX & 3D NCOCX & 3D CANCO \\ \hline
-\multicolumn{2}{l}{ MAS frequency } & 16 kHz & 16 kHz & 16.666 kHz \\ \hline
-\multicolumn{2}{l}{ First transfer } & H-N CP & H-N CP & H-C CP \\ \hline
+\multicolumn{2}{l|}{ MAS frequency } & 16.666 kHz & 16.666 kHz & 16.666 kHz \\ \hline
+\multicolumn{2}{l|}{ First transfer } & H-N CP & H-N CP & H-C CP \\ \hline
 & $\omega_{1,\text{H}} / 2\pi$ (kHz) & 62 & 62 & 69 \\ \hline
-& $\omega_{1,\text{N/C}} / 2\pi$ (kHz) & N:50 & N:50 & C:59 \\ \hline
+& $\omega_{1,\text{N/C}} / 2\pi$ (kHz) & N: 50 & N: 50 & C: 59 \\ \hline
 & Pulse shape & \ce{^1H} tangential & \ce{^1H} tangential & Linear ramp \\ \hline
 & Contact time (ms) & 0.8 & 0.8 & 0.8 \\ \hline
-\multicolumn{2}{l}{ Second transfer } & N-C CP & N-C CP & C-N CP \\ \hline
+\multicolumn{2}{l|}{ Second transfer } & N-C CP & N-C CP & C-N CP \\ \hline
 & $\omega_{1,\text{H}} / 2\pi$ (kHz) & 94 & 91 & 91 \\ \hline
 & $\omega_{1,\text{N/C}} / 2\pi$ (kHz) & C: 28 & C: 41 & C: 29 \\
 & & N: 42 & N: 25 & N: 42  \\ \hline
 & Shape: nucleus and range & \ce{^13C} tangential & \ce{^13C} tangential & \ce{^13C} tangential \\ \hline
 & Contact time (ms) & 5 & 5.2 & 5.5 \\ \hline
-\multicolumn{2}{l}{ Third transfer } & C-C mixing & C-C mixing & N-C CP \\ \hline
-& $\omega_{1,\text{H}} / 2\pi$ (kHz) & ~17 & ~17 & 98 \\ \hline
+\multicolumn{2}{l|}{ Third transfer } & C-C mixing & C-C mixing & N-C CP \\ \hline
+& $\omega_{1,\text{H}} / 2\pi$ (kHz) & $\sim$17 & $\sim$17 & 98 \\ \hline
 & $\omega_{1,\text{N/C}} / 2\pi$ (kHz) & & & C: 43 \\
 & & & & N: 25 \\ \hline
 & Shape: nucleus and range & & & \ce{^13C} tangential \\ \hline
@@ -390,20 +420,20 @@ Total time & & 5 d 12 h & 8 d & 7 d 14 h \\ \hline
 \begin{longtable} {l|l|c|c|c}
 \caption{\scriptsize Experimental parameters for the 3D experiments at 750 MHz. Pulse sequences similar to those used for these experiments are available at \url{comdnmr.nysbc.org}\label{SI_tb_750exp}}\\ \hline \hline
 Experiment & & 3D NCACX & 3D NCOCX & 3D CANCO \\ \hline
-\multicolumn{2}{l}{ MAS frequency } & 16 kHz & 16 kHz & 33.333 kHz \\ \hline
-\multicolumn{2}{l}{ First transfer } & H-N CP & H-N CP & H-C CP \\ \hline
+\multicolumn{2}{l|}{ MAS frequency } & 16 kHz & 16 kHz & 33.333 kHz \\ \hline
+\multicolumn{2}{l|}{ First transfer } & H-N CP & H-N CP & H-C CP \\ \hline
 & $\omega_{1,\text{H}} / 2\pi$ (kHz) & 72 & 72 & 80 \\ \hline
-& $\omega_{1,\text{N/C}} / 2\pi$ (kHz) & N:58 & N:58 & C:56 \\ \hline
+& $\omega_{1,\text{N/C}} / 2\pi$ (kHz) & N: 58 & N: 58 & C: 56 \\ \hline
 & Pulse shape & \ce{^1H} tangential & \ce{^1H} tangential & \ce{^1H} tangential \\ \hline
 & Contact time (ms) & 1 & 1 & 1 \\ \hline
-\multicolumn{2}{l}{ Second transfer } & N-C CP & N-C CP & C-N CP \\ \hline
+\multicolumn{2}{l|}{ Second transfer } & N-C CP & N-C CP & C-N CP \\ \hline
 & $\omega_{1,\text{H}} / 2\pi$ (kHz) & 95 & 95 & 95 \\ \hline
 & $\omega_{1,\text{N/C}} / 2\pi$ (kHz) & C: 24 & C: 8 & C: 17 \\
 & & N: 40 & N: 24 & N: 48 \\ \hline
 & Shape: nucleus and range & \ce{^13C} tangential & \ce{^13C} tangential & \ce{^13C} tangential \\ \hline
 & Contact time (ms) & 3.75 & 5.0 & 3.75 \\ \hline
-\multicolumn{2}{l}{ Third transfer } & C-C mixing & C-C mixing & N-C CP \\ \hline
-& $\omega_{1,\text{H}} / 2\pi$ (kHz) & ~16 & ~16 & 95 \\ \hline
+\multicolumn{2}{l|}{ Third transfer } & C-C mixing & C-C mixing & N-C CP \\ \hline
+& $\omega_{1,\text{H}} / 2\pi$ (kHz) & $\sim$16 & $\sim$16 & 95 \\ \hline
 & $\omega_{1,\text{N/C}} / 2\pi$ (kHz) & & & C: 17 \\
 & & & & N: 49 \\ \hline
 & Shape: nucleus and range & & & \ce{^13C} tangential \\ \hline
@@ -426,15 +456,36 @@ Total time & & 5 d 1 h & 5 d 21 h & 5 d 7 h \\ \hline
 \end{longtable}
 \end{center}
 \endgroup
+\clearpage
+\begingroup
+\begin{center}
+\begin{longtable} {|l|l|c|c|c|c|}
+\caption{\scriptsize Root mean square errors (RMSE) of the different CS calculations of this work in relation to their experimental counter parts. FO stands for the Fully Open state (5VK6) and PO for the Partially Open state (3FB5). In general these differences are close to the experimental uncertainty of about 0.2 ppm.\label{SI_tb_RMSE}}\\ \hline \hline
+\multicolumn{2}{|l|}{}&\multicolumn{4}{c|}{RMSE (ppm)}\\\hline
+\multicolumn{2}{|l|}{}&\multicolumn{2}{c|}{SPARTA+}&\multicolumn{2}{l|}{SHIFTX2}\\\hline
+Nuclei & Magnitude &PO&FO&PO&FO\\\hline
+all &$\text{CS}_\text{XRD}^\text{X}-\text{CS}_\text{exp}$& 4.2&4.2&4.1&4.1\\\hline
+all &$\Delta \text{CS}_\text{XRD}^\text{X}-\Delta \text{CS}_\text{exp}$&0.6&0.6&0.8&0.7\\\hline
+all &$\text{CS}_\text{sim}^\text{X}-\text{CS}_\text{exp}$&4.5&4.4&4.6&4.5\\\hline
+discriminating &$\text{CS}_\text{sim}^\text{X}-\text{CS}_\text{exp}$&3.2&4.4&8.0&7.0\\\hline
+all &$\left(\text{CS}_\text{sim}^\text{X}-\delta\right)-\text{CS}_\text{exp}$&2.4&2.4&2.9&2.9\\\hline
+discriminating &$\left(\text{CS}_\text{sim}^\text{X}-\delta\right)-\text{CS}_\text{exp}$&1.5&2.3&5.8&5.0\\\hline
+all &$\Delta \text{CS}_\text{sim}^\text{X}-\Delta \text{CS}_\text{exp}$&0.4&0.5&0.4&0.6\\\hline
+discriminating &$\Delta \text{CS}_\text{sim}^\text{X}-\Delta \text{CS}_\text{exp}$&0.2&0.6&0.4&1.2\\\hline
+\end{longtable}
+\end{center}
+\endgroup
+
+
 
 \begingroup
 \begin{center}
 \begin{longtable}{l|c|c|c|c|c|c|c|c|c}
 \caption{\scriptsize Experimental resonance assignments of KcsA in the activated state (50 mM KCl, pH 4.0, 3:1 DOPE/DOPG)\label{SI_tb_activated_exp_CS}}\\ \hline \hline 
-\textbf{Residue} & \textbf{N} & \textbf{C} & \textbf{\ca} & \textbf{\cb} & \textbf{C$_{\gamma2}$} & \textbf{C$_{\gamma2}$} & \textbf{\cd} & \textbf{\cep} & \textbf{\cz} \\ \hline
+\textbf{Residue} & \textbf{N} & \textbf{C} & \textbf{\ca} & \textbf{\cb} & \textbf{C$_{\gamma1}$} & \textbf{C$_{\gamma2}$} & \textbf{\cd} & \textbf{\cep} & \textbf{\cz} \\ \hline
 \endfirsthead 
 \hline
-\textbf{Residue} & \textbf{N} & \textbf{C} & \textbf{\ca} & \textbf{\cb} & \textbf{C$_{\gamma2}$} & \textbf{C$_{\gamma2}$} & \textbf{\cd} & \textbf{\cep} & \textbf{\cz} \\ \hline
+\textbf{Residue} & \textbf{N} & \textbf{C} & \textbf{\ca} & \textbf{\cb} & \textbf{C$_{\gamma1}$} & \textbf{C$_{\gamma2}$} & \textbf{\cd} & \textbf{\cep} & \textbf{\cz} \\ \hline
 \endhead
 T33 & 114.86 & 175.04 & 66.88 & 67.65 & 21.15 & & & & \\ \hline
 V34 & 120.9 & 177.17 & 66.88 & 30.86 & 23.11 & 21.28 & & & \\ \hline
@@ -531,11 +582,11 @@ E118 & & & & & 34.31 & & 181.4 & & \\\hline
 \begingroup
 \begin{center}
 \begin{longtable}{l|c|c|c|c|c|c|c|c|c}
-\caption{\scriptsize Experimental resonance assignments of KcsA in the deactivated state (50 mM KCl, pH 7.5, 9:1 DOPE/DOPS) taken from previous data\cite{Wylie2014} with re-adjustment of the chemical shift referencing\label{SI_tb_deactivated_exp_CS}}\\ \hline \hline 
-\textbf{Residue} & \textbf{N} & \textbf{C} & \textbf{\ca} & \textbf{\cb} & \textbf{C$_{\gamma2}$} & \textbf{C$_{\gamma2}$} & \textbf{\cd} & \textbf{\cep} & \textbf{\cz} \\ \hline
+\caption{\scriptsize Experimental resonance assignments of KcsA in the deactivated state (50 mM KCl, pH 7.5, 9:1 DOPE/DOPS) taken from previous data\cite{Wylie2014} with re-adjustment of the chemical shift referencing.\label{SI_tb_deactivated_exp_CS}}\\ \hline \hline 
+\textbf{Residue} & \textbf{N} & \textbf{C} & \textbf{\ca} & \textbf{\cb} & \textbf{C$_{\gamma1}$} & \textbf{C$_{\gamma2}$} & \textbf{\cd} & \textbf{\cep} & \textbf{\cz} \\ \hline
 \endfirsthead 
 \hline
-\textbf{Residue} & \textbf{N} & \textbf{C} & \textbf{\ca} & \textbf{\cb} & \textbf{C$_{\gamma2}$} & \textbf{C$_{\gamma2}$} & \textbf{\cd} & \textbf{\cep} & \textbf{\cz} \\ \hline
+\textbf{Residue} & \textbf{N} & \textbf{C} & \textbf{\ca} & \textbf{\cb} & \textbf{C$_{\gamma1}$} & \textbf{C$_{\gamma2}$} & \textbf{\cd} & \textbf{\cep} & \textbf{\cz} \\ \hline
 \endhead
 R27 & & 177.13 & 59.47 & 28.84 & & & & & \\\hline
 A28 & 119.6 & 179.78 & 54.855 & 17.74 & & & & & \\\hline
@@ -1029,9 +1080,11 @@ L110 & 119.47 $\pm$ 0.02 & 119.89 $\pm$ 0.02 & 119.48 $\pm$ 0.02 & 118.66 $\pm$ 
 \begingroup
 \begin{center}
 \begin{longtable}{l|c|c|c|c|c|c|c|c}
-\caption{\scriptsize Difference between simulated and experimental chemical shifts for \ca for the two chemical shift prediction methods and the Fully Open and Fully Partially states (CS$_\text{sim}^\text{FO}-$CS$_\text{sim}^\text{PO}$). The first 4 columns show the relative chemical shifts using the closed state as a reference.  \label{SI_tb_DDCS_CA}}\\ 
+\caption{\scriptsize Difference between simulated and experimental chemical shifts for \ca for the two chemical shift prediction methods and the Fully Open and Fully Partially states (CS$_\text{sim}^\text{FO}, $CS$_\text{sim}^\text{PO}$). The last 4 columns show the relative chemical shifts using the closed state as a reference.  \label{SI_tb_DDCS_CA}}\\ 
 \hline 
 \hline 
+& \multicolumn{4}{c|}{ CS$_\text{sim}^\text{X}-$CS$_\text{exp}^\text{pH = 4, act}$} & \multicolumn{4}{c}{ $\Delta\Delta\text{CS}_\text{sim}^\text{X}$} \\
+\hline
 & \textbf{Fully} & \textbf{Partially} & \textbf{Fully} & \textbf{Partially} & \textbf{Fully} & \textbf{Partially} & \textbf{Fully} & \textbf{Partially} \\
 & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,}\\
 \textbf{Residue} & \textbf{SPARTA+} & \textbf{SPARTA+} & \textbf{SHIFTX2} & \textbf{SHIFTX2} & \textbf{SPARTA+} & \textbf{SPARTA+} & \textbf{SHIFTX2} & \textbf{SHIFTX2} \\
@@ -1063,9 +1116,11 @@ T107 & -2.1$\pm$0.0 & -0.8$\pm$0.0 & -1.8$\pm$0.0 & -0.9$\pm$0.0 & -1.06$\pm$0.0
 \begingroup
 \begin{center}
 \begin{longtable}{l|c|c|c|c|c|c|c|c}
-\caption{\scriptsize Difference between simulated and experimental chemical shifts for \cb for the two chemical shift prediction methods and the Partially Open and Fully Open states (CS$_\text{sim}^\text{FO}-$CS$_\text{sim}^\text{PO}$). The first 4 columns show the relative chemical shifts using the closed state as a reference.  \label{SI_tb_DDCS_CB}}\\ 
+\caption{\scriptsize Difference between simulated and experimental chemical shifts for \cb for the two chemical shift prediction methods and the Partially Open and Fully Open states (CS$_\text{sim}^\text{FO}-$CS$_\text{sim}^\text{PO}$). The last 4 columns show the relative chemical shifts using the closed state as a reference.  \label{SI_tb_DDCS_CB}}\\ 
 \hline 
 \hline 
+& \multicolumn{4}{c|}{ CS$_\text{sim}^\text{X}-$CS$_\text{exp}^\text{pH = 4, act}$} & \multicolumn{4}{c}{ $\Delta\Delta\text{CS}_\text{sim}^\text{X}$} \\
+\hline
 & \textbf{Fully} & \textbf{Partially} & \textbf{Fully} & \textbf{Partially} & \textbf{Fully} & \textbf{Partially} & \textbf{Fully} & \textbf{Partially} \\
 & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} \\
 \textbf{Residue} & \textbf{SPARTA+} & \textbf{SPARTA+} & \textbf{SHIFTX2} & \textbf{SHIFTX2} & \textbf{SPARTA+} & \textbf{SPARTA+} & \textbf{SHIFTX2} & \textbf{SHIFTX2} \\
@@ -1094,10 +1149,12 @@ A109 & 1.3$\pm$0.0 & 1.5$\pm$0.0 & & & 1.09$\pm$0.02 & 1.29$\pm$0.02 & & \\
 \begingroup
 \begin{center}
 \begin{longtable}{l|c|c|c|c|c|c|c|c}
-\caption{\scriptsize Difference between simulated and experimental chemical shifts for C for the two chemical shift prediction methods and the Partially Open and Fully Open states (CS$_\text{sim}^\text{FO}-$CS$_\text{sim}^\text{PO}$). The first 4 columns show the relative chemical shifts using the closed state as a reference.  \label{SI_tb_DDCS_C}}\\ 
+\caption{\scriptsize Difference between simulated and experimental chemical shifts for C for the two chemical shift prediction methods and the Partially Open and Fully Open states (CS$_\text{sim}^\text{FO}, $CS$_\text{sim}^\text{PO}$). The last 4 columns show the relative chemical shifts using the closed state as a reference.  \label{SI_tb_DDCS_C}}\\ 
 \hline 
 \hline 
 \footnotesize
+& \multicolumn{4}{c|}{ CS$_\text{sim}^\text{X}-$CS$_\text{exp}^\text{pH = 4, act}$} & \multicolumn{4}{c}{ $\Delta\Delta\text{CS}_\text{sim}^\text{X}$} \\
+\hline
 & \textbf{Fully} & \textbf{Partially} & \textbf{Fully} & \textbf{Partially} & \textbf{Fully} & \textbf{Partially} & \textbf{Fully} & \textbf{Partially} \\
 & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} \\
 \textbf{Residue} & \textbf{SPARTA+} & \textbf{SPARTA+} & \textbf{SHIFTX2} & \textbf{SHIFTX2} & \textbf{SPARTA+} & \textbf{SPARTA+} & \textbf{SHIFTX2} & \textbf{SHIFTX2} \\
@@ -1125,9 +1182,11 @@ A109 & & & 1.9$\pm$0.0 & 1.6$\pm$0.0 & & & 0.54$\pm$0.02 & 0.32$\pm$0.02 \\
 \begingroup
 \begin{center}
 \begin{longtable}{l|c|c|c|c|c|c|c|c}
-\caption{\scriptsize Difference between simulated and experimental chemical shifts for N for the two chemical shift prediction methods and the Partially Open and Fully Open states (CS$_\text{sim}^\text{FO}-$CS$_\text{sim}^\text{PO}$). The first 4 columns show the relative chemical shifts using the closed state as a reference.  \label{SI_tb_DDCS_N}}\\ 
+\caption{\scriptsize Difference between simulated and experimental chemical shifts for N for the two chemical shift prediction methods and the Partially Open and Fully Open states (CS$_\text{sim}^\text{FO}, $CS$_\text{sim}^\text{PO}$). The last 4 columns show the relative chemical shifts using the closed state as a reference.  \label{SI_tb_DDCS_N}}\\ 
 \hline 
 \hline 
+& \multicolumn{4}{c|}{ CS$_\text{sim}^\text{X}-$CS$_\text{exp}^\text{pH = 4, act}$} & \multicolumn{4}{c}{ $\Delta\Delta\text{CS}_\text{sim}^\text{X}$} \\
+\hline
 & \textbf{Fully} & \textbf{Partially} & \textbf{Fully} & \textbf{Partially} & \textbf{Fully} & \textbf{Partially} & \textbf{Fully} & \textbf{Partially} \\
 & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} & \textbf{Open,} \\
 \textbf{Residue} & \textbf{SPARTA+} & \textbf{SPARTA+} & \textbf{SHIFTX2} & \textbf{SHIFTX2} & \textbf{SPARTA+} & \textbf{SPARTA+} & \textbf{SHIFTX2} & \textbf{SHIFTX2} \\
@@ -1155,7 +1214,7 @@ A108 & & & 1.9$\pm$0.1 & 1.1$\pm$0.1 & & & 0.72$\pm$0.08 & -0.08$\pm$0.09 \\
 \end{center}
 \endgroup
 
-\clearpage
+%\clearpage
 
 %\nocite{*}
 \bibliography{bibliography,nmr_bib}% Produces the bibliography via BibTeX.
