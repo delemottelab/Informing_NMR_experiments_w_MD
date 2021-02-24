@@ -16,7 +16,9 @@ pip-delete-this-directory.txt
 .ipynb_checkpoints/
 
 # exclude data from source control by default
-/data/raw/
+/data/raw/*
+!/data/raw/SHIFTX2_test
+!/data/raw/SHIFTX2_test/*
 /data/processed/
 
 # Mac OS-specific storage files
@@ -53,7 +55,5 @@ normal_model_ppm_N.nc
 *.nc
 *-Copy*py
 notebooks/*Copy*
-err*
-out*
 ~$Bayes_Law.pptx
 *tar.gz
