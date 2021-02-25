@@ -1,0 +1,6 @@
+# Getting things properly submited
++ Maybe some figures need to be changed format: jpeg, eps, tiff, pdf
++ Take the contents of bbl and paste them in SI.tex and aip_text.tex replacing the \bibliography command.
++ The SI.aux has to be given in order to have the SI references introduced.
++ Put all the figures in the main folder.
++ In SI.tex change the document class from preprin to draft so you don't need to upload the figures.
